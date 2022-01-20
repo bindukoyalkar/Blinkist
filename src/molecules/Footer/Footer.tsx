@@ -6,7 +6,6 @@ const useStyles = makeStyles(theme => ({
     logo:{
         height: '24px',
         width: '99.09677124023438px',
-        /* marginBottom:'1rem' */
     },
     quote:{
     fontSize: '24px',

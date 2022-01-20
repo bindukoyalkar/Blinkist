@@ -15,10 +15,6 @@ interface BookType{
   noOfReads?:string,
 }
 
-
-//console.log("currently reading books:")
-//console.log(OPENBOOK) 
-
 function CurrentBooks(props:Props){
     return (
     <Container style={{paddingLeft:"7%",paddingRight:"7%"}}>
@@ -39,10 +35,3 @@ function CurrentBooks(props:Props){
     );
 }
 export default CurrentBooks;
-
-/* {OPENBOOK.map(book=> (<Grid item xs={12} sm={6} md={4}>
-  <MyCard changeTab={props.changeTab} progressBar='half' button='Finished' id={book.id} key={book.id} src={book.src} name={book.name} author={book.author} duration={book.duration}
-  noOfReads={book.noOfReads}
-  />
-</Grid>
-))}  */

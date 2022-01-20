@@ -44,7 +44,6 @@ const trendingData=`{"books":[{"id":11,"src":"being-boss.png","name":"Being Boss
 ]}`
 const data1= JSON.parse(trendingData);
 const trending= data1.books;
-//console.log(trending)
 
 const newlyAddedData=`{"books":[{"id":7,"src":"7.png","name":"The Lonely Century","author":"Noreena Hertz","duration":"15"},
 {"id":8,"src":"8.png","name":"Eat Better, Feel Better","author":"Giada De Laurentiis","duration":"13","noOfReads":"1.9"},
@@ -52,7 +51,6 @@ const newlyAddedData=`{"books":[{"id":7,"src":"7.png","name":"The Lonely Century
 
 const data2=JSON.parse(newlyAddedData);
 const justAdded= data2.books;
-//console.log(newlyAddedData)
 
 const featuredData=`{"books":[{"id":1,"src":"1.png","name":"Bring Your Human to Work","author":"Erica Keswin","duration":"13"},
 {"id":3,"src":"3.png","name":"Doesn’t Hurt to Ask","author":"Trey Gowdy","duration":"13","noOfReads":"1.9"},
@@ -60,7 +58,6 @@ const featuredData=`{"books":[{"id":1,"src":"1.png","name":"Bring Your Human to 
 
 const data3=JSON.parse(featuredData);
 const featured= data3.books;
-//console.log(featured)
 
 const SearchBar=(props:Props)=> {
   const [searchTerm,setSearchTerm]= useState('')

@@ -120,12 +120,10 @@ const Dropdown=(props:Props)=>{
     const classes=useStyles();
     const expandExplore=(e:React.MouseEvent<SVGSVGElement, MouseEvent>| React.MouseEvent<HTMLSpanElement, MouseEvent>)=>{
         value===0 ? setValue(1): setValue(0)
-        //console.log(value)
         }
     const expandSearch=(e:React.MouseEvent<SVGSVGElement, MouseEvent>, val:number)=>{
       setSearch(val)
       val===0 && props.setSearchTerm("")
-      //console.log("search value is: "+search)
     }
 
     const nextPage=(e: React.MouseEvent<HTMLSpanElement, MouseEvent>,value: number)=>{
@@ -162,12 +160,8 @@ const Dropdown=(props:Props)=>{
                 </Grid>
 
                 <Grid item md={0.25}>
-                { value===0 && <KeyboardArrowDownIcon /* style={{ color: 'black',
-                position: 'absolute',
-                left:'31.69%', top:'30%'}} */ className={classes.arrowUp} /* onClick={(e)=>expandExplore(e)} *//>}
-             { value===1 && <KeyboardArrowUpOutlinedIcon /* style={{ color: 'black',
-                position: 'absolute',
-                left:'31.69%', top:'30%'}} */ className={classes.arrowUp} /* onClick={(e)=>expandExplore(e)} *//>}
+                { value===0 && <KeyboardArrowDownIcon className={classes.arrowUp} />}
+             { value===1 && <KeyboardArrowUpOutlinedIcon  className={classes.arrowUp} />}
                 </Grid>
 
                 <Grid item md={0.25}>
@@ -221,19 +215,6 @@ const Dropdown=(props:Props)=>{
             <Typography className={classes.category1} variant='body1'>Explore by category</Typography>
             <ul className={classes.ul}>
                 <li key={1}>
-                    {/* <Button variant='text' sx={{':hover': {color: '#0365F2',},}}
-                    style={{textTransform:'none',fontWeight:'400',
-                    fontSize:'16px',
-                    lineHeight:'24px',}} startIcon={<AddAlertOutlinedIcon/>}>Entrepreneurship</Button> */}
-                    {/* <Typography 
-                    sx={{
-                        ':hover': {
-                          color: '#0365F2',
-                        },
-                      }}
-                onClick={(e)=>nextPage(e,2)}    variant='body2'><Icons><AddAlertOutlinedIcon 
-                sx={{ '&:hover': { color: '#0365F2' } }}
-                /></Icons>Entrepreneurship</Typography> */}
                 <Button variant="text" sx={{
                         ':hover': {
                           color: 'secondary.main',

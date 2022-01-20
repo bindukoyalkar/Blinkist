@@ -12,8 +12,6 @@ it('beyond Entrepreneurship book detail page', async()=>{
     const readNowButton=screen.getByRole('button',{name:"Read now"})
     expect(readNowButton).not.toBeDisabled();
 
-    
-
     const tab1=screen.getByRole('tab',{name:'Synopsis'})
     expect(tab1).toHaveAttribute("aria-selected", "true");
     const tab2=screen.getByRole('tab',{name:'Who is it for?'})

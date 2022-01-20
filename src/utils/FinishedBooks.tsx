@@ -15,9 +15,6 @@ interface BookType{
   noOfReads?:string,
 }
 
-//console.log("finished reading books:")
-//console.log(CLOSEDBOOK) 
-
 function FinishedBooks(props:Props){
     return (
       <Container style={{paddingLeft:"7%",paddingRight:"7%"}}>
@@ -39,8 +36,3 @@ function FinishedBooks(props:Props){
     );
 }
 export default FinishedBooks;
-
-/* {CLOSEDBOOK.map(book=> (<Grid item xs={12} sm={6} md={4}>
-  <MyCard changeTab={props.changeTab} id={book.id} key={book.id} src={book.src} name={book.name} author={book.author} duration={book.duration} progressBar='full' button='Read again'/>
-</Grid>
-))}   */
