@@ -54,9 +54,9 @@ const BookDetail=(props:Props)=> {
     const submit=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>, name: string, val:number)=>{
             const filtered=OPENBOOK.filter((book: { name: string; }) => name!== book.name )
             CLOSEDBOOK.push({'id':2,'src':"beyondEntrepreneur.png",'name':"Beyond Entrepreneurship", 'author':"Jim Collins & Bill Lazier", 'duration':"13"})
-            console.log(filtered);
+            //console.log(filtered);
             OPENBOOK.splice(9,2);
-            console.log(CLOSEDBOOK);
+            //console.log(CLOSEDBOOK);
             props.changeState(val);
     }
     return (

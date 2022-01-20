@@ -16,8 +16,8 @@ interface BookType{
 }
 
 
-console.log("currently reading books:")
-console.log(OPENBOOK) 
+//console.log("currently reading books:")
+//console.log(OPENBOOK) 
 
 function CurrentBooks(props:Props){
     return (

@@ -8,7 +8,7 @@ interface Props{
 const SwitchTab=(props:Props)=> {
     const [value,setValue]= React.useState(0)
     const handleTabs=(e:React.SyntheticEvent<Element, Event> , val: number)=>{
-        console.log(val)
+        //console.log(val)
         setValue(val)
         }
     const changeTab=(val:number)=>{

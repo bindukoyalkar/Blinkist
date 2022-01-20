@@ -15,8 +15,8 @@ interface BookType{
   noOfReads?:string,
 }
 
-console.log("finished reading books:")
-console.log(CLOSEDBOOK) 
+//console.log("finished reading books:")
+//console.log(CLOSEDBOOK) 
 
 function FinishedBooks(props:Props){
     return (

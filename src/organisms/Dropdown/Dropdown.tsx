@@ -120,12 +120,12 @@ const Dropdown=(props:Props)=>{
     const classes=useStyles();
     const expandExplore=(e:React.MouseEvent<SVGSVGElement, MouseEvent>| React.MouseEvent<HTMLSpanElement, MouseEvent>)=>{
         value===0 ? setValue(1): setValue(0)
-        console.log(value)
+        //console.log(value)
         }
     const expandSearch=(e:React.MouseEvent<SVGSVGElement, MouseEvent>, val:number)=>{
       setSearch(val)
       val===0 && props.setSearchTerm("")
-      console.log("search value is: "+search)
+      //console.log("search value is: "+search)
     }
 
     const nextPage=(e: React.MouseEvent<HTMLSpanElement, MouseEvent>,value: number)=>{
@@ -147,7 +147,7 @@ const Dropdown=(props:Props)=>{
                     <Image className={classes.logo} path='logo.png' />
                 </Grid>
 
-                <Grid item md={0.5}>
+                <Grid item md={0.5} >
                   <SearchOutlinedIcon onClick={(e) => {expandSearch(e,1)}}  className={classes.search} />
                 </Grid>
 
@@ -177,9 +177,9 @@ const Dropdown=(props:Props)=>{
                     <Typography className={classes.myLib} variant='body1' onClick={(e)=>toMyLibrary(e)}>My Library</Typography>
                 </Grid> </>}
               
-                {search===1 && <><Grid item md={3} >
+                {search===1 && <><Grid item md={5} >
 
-                  <TextField  onChange={(e)=>{
+                  <TextField fullWidth onChange={(e)=>{
               props.setSearchTerm(e.target.value)
               }} label="Search by title or author" variant="standard"
                   InputProps={{
@@ -187,15 +187,16 @@ const Dropdown=(props:Props)=>{
                       <InputAdornment position="end">
                         <CloseIcon onClick={(e) => {expandSearch(e,0)}} style={{cursor:'pointer'}}/>
                       </InputAdornment>
-                    )}}
-                    style={{ }}
+                  )}}
+                    style={{ bottom:'20%'
+                    }}
                     />
                 </Grid></>}
 
                 {search===0 &&<Grid item md={4}>
                 </Grid>}
 
-                {search===1 &&<Grid item md={3}>
+                {search===1 &&<Grid item md={1}>
                 </Grid>}
 
                 <Grid item md={0.5}>

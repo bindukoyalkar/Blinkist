@@ -84,28 +84,28 @@ const CardWithButton=(props:Props)=> {
     }
 
     const toRepeat=(e: React.MouseEvent<HTMLButtonElement, MouseEvent>,id:number)=>{
-      console.log('to read agin')
+      //console.log('to read agin')
       const book=CLOSEDBOOK.filter((book: { id: number; }) => book.id=== id)
-      console.log(book)
+      //console.log(book)
       OPENBOOK.push(...book)
-      console.log(OPENBOOK)
+      //console.log(OPENBOOK)
       const index=CLOSEDBOOK.findIndex((book: { id: number; }) => book.id=== id);
-      console.log(index)
+      //console.log(index)
       CLOSEDBOOK.splice(index,1)
-      console.log(CLOSEDBOOK)
+      //console.log(CLOSEDBOOK)
       props.changeTab&& props.changeTab(0)
     }
 
     const toFinish=(e: React.MouseEvent<HTMLButtonElement, MouseEvent>, nameOfBook:string)=>{
-      console.log('to finish')
+      //console.log('to finish')
       const book=OPENBOOK.filter((book: { name: string; })=> book.name=== nameOfBook)
-      console.log(book)
+      //console.log(book)
       CLOSEDBOOK.push(...book)
-      console.log(CLOSEDBOOK)
+      //console.log(CLOSEDBOOK)
       const index=OPENBOOK.findIndex((book: { name: string; }) => book.name=== nameOfBook);
-      console.log(index)
+      //console.log(index)
       OPENBOOK.splice(index,1)
-      console.log(OPENBOOK)
+      //console.log(OPENBOOK)
       props.changeTab&& props.changeTab(1)
     }
 
