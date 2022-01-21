@@ -1,5 +1,5 @@
 {
-  "name": "typescript-with-mui",
+  "name": "blinkist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,9 +24,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject",
     "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",
+    "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner.bat",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -68,6 +69,8 @@
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.12",
     "@testing-library/jest-dom": "^5.16.1",
+    "react-hot-loader": "^4.13.0",
+    "sonar-scanner": "^3.1.0",
     "webpack": "^5.66.0"
   }
 }

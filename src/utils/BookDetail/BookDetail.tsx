@@ -5,8 +5,8 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Image from '../../atoms/Image/Image'
 import MyTabs from '../../molecules/MyTabs/MyTabs';
-import OPENBOOK from '../currentlyReading';
-import CLOSEDBOOK from '../completedReading';
+import OPENBOOK from '../OPENBOOK';
+import CLOSEDBOOK from '../CLOSEDBOOK';
 interface Props{
     changeState(val:number): any
 }

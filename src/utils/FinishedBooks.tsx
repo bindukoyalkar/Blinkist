@@ -1,5 +1,5 @@
 import { Grid ,Container} from '@mui/material'
-import CLOSEDBOOK from './completedReading';
+import CLOSEDBOOK from './CLOSEDBOOK';
 import MyCard from '../organisms/MyCard/MyCard';
 interface Props{
   changeTab(val:number): any

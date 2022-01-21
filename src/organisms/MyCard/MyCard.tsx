@@ -7,8 +7,8 @@ import Image from '../../atoms/Image/Image'
 import AddIcon from '@mui/icons-material/Add';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { createTheme, ThemeProvider } from '@mui/material/styles'; 
-import OPENBOOK from '../../utils/currentlyReading';
-import CLOSEDBOOK from '../../utils/completedReading';
+import OPENBOOK from '../../utils/OPENBOOK';
+import CLOSEDBOOK from '../../utils/CLOSEDBOOK';
 
 const useStyles = makeStyles(theme => ({
     wrapIconLeft: {

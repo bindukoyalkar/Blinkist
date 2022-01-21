@@ -33,8 +33,4 @@ it('expand explore dropdown on click', () => {
     const closeIcon=screen.getByTestId('CloseIcon')
     fireEvent.click(closeIcon)
     expect(textBox).not.toBeVisible()
-    /*const inputElement = screen.getByPlaceholderText(/Add a new task here.../i);
-    fireEvent.click(inputElement)
-    fireEvent.change(inputElement, { target: { value: "Go Grocery Shopping" } })
-    expect(inputElement.value).toBe("Go Grocery Shopping"); */
 });

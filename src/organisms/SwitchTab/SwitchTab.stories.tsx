@@ -8,8 +8,6 @@ export default {
   component: SwitchTab,
 } as ComponentMeta<typeof SwitchTab>;
 
-export const Tab: ComponentStory<typeof SwitchTab> = () => <SwitchTab searchTerm="" ></SwitchTab>;
+const Template:ComponentStory<typeof SwitchTab>= (args) => <SwitchTab {...args} />
 
-/* const Template:ComponentStory<typeof SwitchTab>= (args) => <SwitchTab {...args} />
-
-export const Tab= Template.bind({}); */
+export const Tab= Template.bind({});

@@ -7,7 +7,6 @@ export default {
   component: Dropdown,
 } as ComponentMeta<typeof Dropdown>;
 
-/* export const Appbar: ComponentStory<typeof Dropdown> = () => <Dropdown></Dropdown>; */
 const Template:ComponentStory<typeof Dropdown>= (args) => <Dropdown {...args} />
 
 export const Appbar= Template.bind({});

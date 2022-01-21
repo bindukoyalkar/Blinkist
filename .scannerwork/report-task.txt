@@ -1,0 +1,7 @@
+organization=bindukoyalkar
+projectKey=bindukoyalkar_Blinkist
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.26204
+dashboardUrl=https://sonarcloud.io/dashboard?id=bindukoyalkar_Blinkist
+ceTaskId=AX53VJo_PUxGj_I9RwSN
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX53VJo_PUxGj_I9RwSN

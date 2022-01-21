@@ -1,10 +1,11 @@
 import React from 'react';
 import BookDetail from '../BookDetail'
-import {fireEvent, render,screen } from '@testing-library/react';
+import {render,screen } from '@testing-library/react';
+
+const mockedFuntion = jest.fn(); 
 
 it('beyond Entrepreneurship book detail page', async()=>{
-    render(<BookDetail changeState={()=>{}}/>)
-    //screen.getByRole('');
+    render(<BookDetail changeState={mockedFuntion}/>)
 
     const logo=screen.getByRole('img')
     expect(logo).toHaveAttribute('src',"beyondEntrepreneur.png")

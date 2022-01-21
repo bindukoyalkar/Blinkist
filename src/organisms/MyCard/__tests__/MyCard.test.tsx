@@ -13,17 +13,10 @@ it('check beyond Entrepreneurship functionality', async()=>{
     
     const nameOfBook = screen.getByText(/Beyond Entrepreneurship/i);
     expect(nameOfBook).toBeInTheDocument()
-    
-  /*   const bookTitle=screen.getByRole('heading');
-    expect(bookTitle).toHaveTextContent('Beyond Entrepreneurship') */
 
     const clock=screen.getByTestId('AccessTimeIcon')
     fireEvent.click(clock)
     expect(clock).toBeVisible()
-
-    /* const person=screen.getByTestId('PersonOutlineOutlinedIcon')
-    fireEvent.click(person)
-    expect(person).not.toBeVisible() */
 
     const button=screen.getByRole('button')
     expect(button).toHaveTextContent('Add to library')

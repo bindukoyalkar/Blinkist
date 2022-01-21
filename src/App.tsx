@@ -8,12 +8,7 @@ import Banner from './molecules/Banner/Banner';
 import BookDetail from './utils/BookDetail/BookDetail';
 import Heading from './molecules/Heading/Heading';
 
-const useStyles = makeStyles(theme => ({
-
-})); 
-
 function App(){
-  const classes=useStyles();
   const [page,setPage]=useState(1)
   const [searchTerm,setSearchTerm]= useState('')
   const changePage=(val: number)=>{
@@ -34,9 +29,7 @@ function App(){
    
   { page===2 && <div>
     <Banner />
-{/*     <div style={{marginLeft:'20%', marginTop:'2%'}}> */}
     <SearchBar  changeState={changePage}/>
-{/*     </div> */}
     </div>  }
 
 {page===3 && <BookDetail changeState={changePage} />}
